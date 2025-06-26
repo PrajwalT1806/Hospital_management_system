@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <style>
+            /* Make the buttons blue-violet */
+            input[type="submit"] {
+                background-color: blueviolet;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            input[type="submit"]:hover {
+                background-color: darkviolet;
+            }
+            /* Make the background green-yellow */
+            body {
+                background-image: url("./hmsbg.jpg");
+                 background-repeat: no-repeat;
+                 background-position: center;
+                 background-attachment: fixed;
+                 background-size: cover;
+                /*background-color: rgb(150,201,214);*/
+            }
+            /* Center the form on the page */
+            form {
+                margin: 0 auto;
+                width: 300px;
+            }
+            /* Style the label elements */
+            label {
+                display: block;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            /* Style the input elements */
+            input[type="email"],
+            input[type="password"],
+            select {
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid gray;
+                font-size: 14px;
+            }
+            /* Style the "Remember me" checkbox */
+            input[type="checkbox"] {
+                margin-right: 5px;
+            }
+            /* Style the "Don't have an account?" link */
+            p {
+                text-align: center;
+            }
+            p a {
+                font-size: 14px;
+                text-decoration: none;
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <br></br>
+        <p> </p>
+        <br></br> 
+        <form action="/register" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <label for="role">Select Role:</label><br>
+            <select id="role" name="role" required>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+            </select><br>
+            <input type="submit" value="Register">
+        </form>
+        <p>
+            Already have an account?
+            <a href="./login.html" style="font-size: 14px; text-decoration: none; color: blueviolet;">
+                Login
+            </a>
+        </p>
+    </body>
+</html>
