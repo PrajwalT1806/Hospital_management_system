@@ -1,11 +1,4 @@
 # Hospital Management System
-
-**Team:**
-
-Adarsh Ninganur
-
-Aryan Prasad
-
 **Project Statement:**
 
 Hospital Management System is a tool which can be used to store, retrieve information about the different patients, their procedures, doctors, etc. Not only it stores information but also provides different methods to retrieve information. For e.g., getting the details of a patient(his procedures, address, appointments, phone number, etc.). This makes the retrieval of information quick, which not only saves time but also helps in smooth functioning of the hospital.
